@@ -1,0 +1,46 @@
+#header {
+	background: #76B55A;
+	color: #FFF;
+	text-align: middle;
+}
+
+	#header a {
+		color: #FFF;
+
+	}
+
+h5 {
+	font-size:1.1em;
+	text-align:center;
+
+}
+
+body {
+	background: #F6F6F6;
+	padding-top: 36px;
+	font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+.fav-item {
+	background: #FFF;
+	text-align:center;
+	border: solid 1px #F6F6F6;
+	font-size: 1em;
+}
+
+.fav-pic {
+	height:50px;
+	width:50px;
+	overflow:hidden;
+	border-radius:50%;
+	background: no-repeat center;
+	background-size: cover;
+}
+
+#footer {
+	background: #FFF;
+	border-top: 1px solid #F6F6F6;
+	
+}
+	#footer a {
+		color: #A3A3A5;
+	}
