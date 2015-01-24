@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <div id="header" class="navbar-fixed-top">
+        <div class="col-xs-4">
+            <a href="#" class="btn fa fa-pencil pull-left" ></a>
+        </div>
+        <div class="col-xs-4">
+            <h5>Favorites</h5>
+        </div>
+        <div class="col-xs-4">
+            <a href="#" class="btn glyphicon fa fa-plus pull-right"></a>
+        </div>
+    </div>
+    <div class="row" id="favorites">
+        <div class="col-xs-4 fav-item" ng-repeat="user in users">
+            <a href="#/UserDetails" class="btn btn-block text-center" ng-click="userSelect(user)">
+                <div class="clearfix">&nbsp;</div>
+                <div class="pic fav-pic center-block" ng-style="{'background-image': user.ProfilePic}"></div>
+                <div class="clearfix">&nbsp;</div>
+                {{user.FirstName}} <br /> {{user.LastName}}
+                <div class="clearfix">&nbsp;</div>
+            </a>
+        </div>
+    </div>
+</div>

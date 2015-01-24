@@ -7,9 +7,25 @@
  * # MainCtrl
  * Controller of the ngPhoneAppApp
  */
-angular.module('ngPhoneAppApp')
-  .controller('MainCtrl', function ($scope) {
+angular.module('ngPhoneApp')
+  .controller('MainCtrl', function ($scope, userDataSvc, userSvc) {
+  	document.body.style.paddingTop = '36px';
+    userDataSvc.query(function(res) {
+            $scope.users = res;
+        }, function(err) {
+            console.log(err);
+        });
 
-    $scope.profilePic = "url(../images/DaenerysTarg.jpg)";
+    $scope.userSelect = function(blah) {
+    	userSvc.put(blah);
+    }
+
+  })
+  
+  .controller('UserCtrl', function ($scope, userSvc) {
+  	document.body.style.paddingTop = "0px";
+  	$scope.user = userSvc.get();
+ 
 
   });
+ 

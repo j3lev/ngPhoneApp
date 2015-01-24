@@ -16,67 +16,12 @@
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
     </head>
-    <body ng-app="ngPhoneAppApp" ng-cloak ng-controller="MainCtrl">
+    <body ng-app="ngPhoneApp" ng-cloak >
         <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="container-fluid">
-            <div id="header" class="navbar-fixed-top">
-                <div class="col-xs-4">
-                    <a href="#" class="btn fa fa-pencil pull-left" ></a>
-                </div>
-                <div class="col-xs-4">
-                    <h5>Favorites</h5>
-                </div>
-                <div class="col-xs-4">
-                    <a href="#" class="btn glyphicon fa fa-plus pull-right"></a>
-                </div>
-            </div>
-            <div class="row" id="favorites">
-                <div class="col-xs-4 fav-item">
-                    <div class="clearfix">&nbsp;</div>
-                    <div class="fav-pic center-block" ng-style="{'background-image': profilePic}"></div>
-                    <div class="clearfix">&nbsp;</div>
-                    Danarys
-                    <div class="clearfix">&nbsp;</div>
-                </div>
-                <div class="col-xs-4 fav-item">
-                    <div class="clearfix">&nbsp;</div>
-                    <div class="fav-pic center-block" ng-style="{'background-image': profilePic}"></div>
-                    <div class="clearfix">&nbsp;</div>
-                    Danarys
-                    <div class="clearfix">&nbsp;</div>
-                </div>
-                <div class="col-xs-4 fav-item">
-                    <div class="clearfix">&nbsp;</div>
-                    <div class="fav-pic center-block" ng-style="{'background-image': profilePic}"></div>
-                    <div class="clearfix">&nbsp;</div>
-                    Danarys
-                    <div class="clearfix">&nbsp;</div>
-                </div>
-                <div class="col-xs-4 fav-item">
-                    <div class="clearfix">&nbsp;</div>
-                    <div class="fav-pic center-block" ng-style="{'background-image': profilePic}"></div>
-                    <div class="clearfix">&nbsp;</div>
-                    Danarys
-                    <div class="clearfix">&nbsp;</div>
-                </div>
-                <div class="col-xs-4 fav-item">
-                    <div class="clearfix">&nbsp;</div>
-                    <div class="fav-pic center-block" ng-style="{'background-image': profilePic}"></div>
-                    <div class="clearfix">&nbsp;</div>
-                    Danarys
-                  
-                    <div class="clearfix">&nbsp;</div>
-                </div>
-                <div class="col-xs-4 fav-item">
-                    <div class="clearfix">&nbsp;</div>
-                    <div class="fav-pic center-block" ng-style="{'background-image': profilePic}"></div>
-                    <div class="clearfix">&nbsp;</div>
-                    Danarys
-                    <div class="clearfix">&nbsp;</div>
-                </div>
-            </div>
+                 
+            <ng-view></ng-view>
             
             <div id="footer" class="navbar-fixed-bottom text-center">
                 <div class="col-xs-3">
@@ -92,10 +37,7 @@
                     <a href="#" class="btn glyphicon fa fa-cog"></a>
                 </div>
             </div>
-
         </div>
-        
-        
         <!-- build:js(.) scripts/oldieshim.js -->
         <!--[if lt IE 9]>
         <script src="bower_components/es5-shim/es5-shim.js"></script>
@@ -118,7 +60,8 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/services/userDataSvc.js"></script>
+        <script src="scripts/services/userSvc.js"></script>
         <!-- endbuild -->
     </body>
 </html>

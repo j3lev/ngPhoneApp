@@ -1,0 +1,83 @@
+<div class="container-fluid">
+	<div >
+		<div class="row"id="header">
+			<div class="col-xs-4">
+				<a href="#/favorites" class="btn fa fa-arrow-left pull-left" ></a>
+			</div>
+			<div class="col-xs-4">
+				<div id="detail-header" class="center-block">
+					<div class="row">
+						<h5>&nbsp;{{user.FirstName}} {{user.LastName}}</h5>
+					</div>
+					<div class="row">
+						<div class="clearfix">&nbsp;</div>
+						<div class="pic pro-pic center-block" ng-style="{'background-image': user.ProfilePic}"></div>
+					</div>
+					<div class="row">
+						<div class="clearfix">&nbsp;</div>
+						{{user.Blurb}}
+						<div class="clearfix">&nbsp;</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row" id="infoheading">
+		<div class="clearfix">&nbsp;</div>
+		<div class="col-xs-12">INFORMATION</div>
+		<div class="clearfix">&nbsp;</div>
+	</div>
+	<div class="row" id="info">
+		<div class="col-xs-1">
+			<div class="pic fav-pic keep-left" ng-style="{'background-image': user.ProfilePic}"></div>
+		</div>
+		<div class="col-xs-8 col-xs-offset-2">
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="row">
+						<span class="info-label">PERSONAL</span>
+					</div>
+					<div class="row">
+						{{user.Mobile}}
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<br /><i class="fa fa-comment-o pull-right"></i>
+				</div>
+				<div class="col-xs-3">
+					<br /><i class="fa fa-phone pull-right"></i>
+				</div>
+			</div>
+			<div class="clearfix">&nbsp;</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="row">
+						<span class="info-label">WORK</span>
+					</div>
+					<div class="row">
+						{{user.Mobile2}}
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<br /><i class="fa fa-phone pull-right"></i>
+				</div>
+			</div>
+			<hr />
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="row">
+						<span class="info-label">EMAIL</span>
+					</div>
+					<div class="row">
+						{{user.Email}}
+					</div>
+				</div>
+				<div class="col-xs-6">
+				<br />
+					<i class="fa fa-envelope-o pull-right"></i>
+				</div>
+			</div>
+		<div class="clearfix">&nbsp;</div>
+		</div>
+	</div>
+</div>

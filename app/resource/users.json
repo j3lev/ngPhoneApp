@@ -1,0 +1,93 @@
+[
+	{
+		"FirstName": "Daenerys",
+		"LastName": "Targaryen",
+		"Mobile": "847 637 6278",
+		"Mobile2": "748 647 1322",
+		"Email": "dtarg@gmail.com",
+		"ProfilePic": "url(../images/DaenerysTarg.jpg)",
+		"Blurb": "Mother of Dragons"
+	},
+	{
+		"FirstName": "Eddard",
+		"LastName": "Stark",
+		"Mobile": "738 827 7566",
+		"Mobile2": "096 746 7364",
+		"Email": "estark@gmail.com",
+		"ProfilePic": "url(../images/ned.jpg)",
+		"Blurb": "Winter is coming"
+	},
+	{
+		"FirstName": "Joffrey",
+		"LastName": "Lannister",
+		"Mobile": "847 637 6778",
+		"Mobile2": "111 234 8731",
+		"Email": "jlann@gmail.com",
+		"ProfilePic": "url(../images/joffrey.jpg)",
+		"Blurb": "I Suck"
+	},
+	{
+		"FirstName": "Tywin",
+		"LastName": "Lannister",
+		"Mobile": "847 587 6278",
+		"Mobile2": "986 756 1793",
+		"Email": "tlann@gmail.com",
+		"ProfilePic": "url(../images/tywin.png)",
+		"Blurb": "I am the boss"
+	},
+	{
+		"FirstName": "Tyrion",
+		"LastName": "Lannister",
+		"Mobile": "812 637 6278",
+		"Mobile2": "096 536 6433",
+		"Email": "tyrion@gmail.com",
+		"ProfilePic": "url(../images/tyrion.jpg)",
+		"Blurb": "I wish I was a little bit taller"
+	},
+	{
+		"FirstName": "Jorah",
+		"LastName": "Mormont",
+		"Mobile": "847 637 6588",
+		"Mobile2": "758 124 8695",
+		"Email": "dtarg@gmail.com",
+		"ProfilePic": "url(../images/jorah.jpg)",
+		"Blurb": "I am Lord Friend Zone"
+	},
+	{
+		"FirstName": "Jon",
+		"LastName": "Snow",
+		"Mobile": "354 637 6278",
+		"Mobile2": "785 145 7584",
+		"Email": "jsnow@gmail.com",
+		"ProfilePic": "url(../images/jonsnow.jpg)",
+		"Blurb": "I know nothing"
+	},
+	{
+		"FirstName": "Sansa",
+		"LastName": "Stark",
+		"Mobile": "123 737 6278",
+		"Mobile2": "111 777 3333",
+		"Email": "sstark@gmail.com",
+		"ProfilePic": "url(../images/sansa.jpg)",
+		"Blurb": "I don't know what's going on"
+	},
+	{
+		"FirstName": "Cersei",
+		"LastName": "Lannister",
+		"Mobile": "847 637 2222",
+		"Mobile2": "574 987 1345",
+		"Email": "clann@gmail.com",
+		"ProfilePic": "url(../images/cersei.jpg)",
+		"Blurb": "I am the queen"
+	},
+	{
+		"FirstName": "Sandor",
+		"LastName": "Clegane",
+		"Mobile": "111 637 6278",
+		"Mobile2": "437 467 1342",
+		"Email": "scleg@gmail.com",
+		"ProfilePic": "url(../images/sandor.jpg)",
+		"Blurb": "Do you even lift bro?"
+	}
+
+]
