@@ -4,6 +4,7 @@
 	text-align: middle;
 }
 
+	#header i, 
 	#header a {
 		color: #FFF;
 	}
@@ -86,5 +87,14 @@ body {
 .fa-envelope-o,
 .fa-comment-o  {
 	color: #A3A3A5;
+}
+
+i .btn {
+	color: #FFF;
+}
+
+input,
+textarea {
+	color: black;
 }
 

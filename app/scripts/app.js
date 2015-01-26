@@ -12,6 +12,9 @@ angular
       templateUrl: 'views/UserDetails.html',
       controller: 'UserCtrl'
     });
+    $routeProvider.when('/Edit', {
+      templateUrl: 'views/EditScreen.html'
+    });
     $routeProvider.otherwise({redirectTo: '/Favorites'});
   });
   

@@ -1,18 +1,18 @@
 <div class="container-fluid">
     <div id="header" class="navbar-fixed-top">
         <div class="col-xs-4">
-            <a href="#" class="btn fa fa-pencil pull-left" ></a>
+            <i class="btn fa fa-pencil pull-left fa-2x" ng-click="setEdit()"></i>
         </div>
         <div class="col-xs-4">
             <h5>Favorites</h5>
         </div>
         <div class="col-xs-4">
-            <a href="#" class="btn glyphicon fa fa-plus pull-right"></a>
+            <a href="#/UserDetails" class="btn glyphicon fa fa-plus fa-2x pull-right" ng-hide="edit" ng-click="setNew()"></a>
         </div>
     </div>
     <div class="row" id="favorites">
         <div class="col-xs-4 fav-item" ng-repeat="user in users">
-            <a href="#/UserDetails" class="btn btn-block text-center" ng-click="userSelect(user)">
+            <a href="#/UserDetails" class="btn btn-block text-center" ng-click="userSelect($index, user)">
                 <div class="clearfix">&nbsp;</div>
                 <div class="pic fav-pic center-block" ng-style="{'background-image': user.ProfilePic}"></div>
                 <div class="clearfix">&nbsp;</div>

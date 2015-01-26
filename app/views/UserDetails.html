@@ -3,11 +3,13 @@
 		<div class="row"id="header">
 			<div class="col-xs-4">
 				<a href="#/favorites" class="btn fa fa-arrow-left pull-left" ></a>
+				<a href="#/favorites" class="btn fa fa-times pull-left" ng-click="del()" ng-show="(edit)"></a>
 			</div>
 			<div class="col-xs-4">
 				<div id="detail-header" class="center-block">
 					<div class="row">
-						<h5>&nbsp;{{user.FirstName}} {{user.LastName}}</h5>
+						<h5 ng-hide="edit">&nbsp;{{user.FirstName}} {{user.LastName}}</h5>
+						<input ng-show="edit" type="text" placeholder="Username" ng-model="FullName"></input>
 					</div>
 					<div class="row">
 						<div class="clearfix">&nbsp;</div>
@@ -15,10 +17,14 @@
 					</div>
 					<div class="row">
 						<div class="clearfix">&nbsp;</div>
-						{{user.Blurb}}
+						<span ng-if="!edit">{{user.Blurb}}</span>
+						<textarea ng-if="edit" ng-model="userEdit.Blurb" wrap="on" placeholder="Blurb" rows="2"></textarea>
 						<div class="clearfix">&nbsp;</div>
 					</div>
 				</div>
+			</div>
+			<div class="col-xs-4" ng-if="edit">
+				<a href="#/favorites" class="btn fa fa-check pull-right" ng-click="submitEdit()"></a>
 			</div>
 		</div>
 	</div>
@@ -38,7 +44,8 @@
 						<span class="info-label">PERSONAL</span>
 					</div>
 					<div class="row">
-						{{user.Mobile}}
+						<span ng-if="!edit">{{user.Mobile}}</span>
+						<input ng-if="edit" ng-model="userEdit.Mobile" size="12"></input>
 					</div>
 				</div>
 				<div class="col-xs-3">
@@ -55,7 +62,8 @@
 						<span class="info-label">WORK</span>
 					</div>
 					<div class="row">
-						{{user.Mobile2}}
+						<span ng-if="!edit">{{user.Mobile2}}</span>
+						<input ng-if="edit" ng-model="userEdit.Mobile2" size="12"></input>
 					</div>
 				</div>
 				<div class="col-xs-6">
@@ -69,7 +77,8 @@
 						<span class="info-label">EMAIL</span>
 					</div>
 					<div class="row">
-						{{user.Email}}
+						<span ng-if="!edit">{{user.Email}}</span>
+						<input ng-if="edit" ng-model="userEdit.Email"></input>
 					</div>
 				</div>
 				<div class="col-xs-6">
